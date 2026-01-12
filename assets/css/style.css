@@ -842,6 +842,9 @@ footer img {
     width: 90vw;
     /* display: block; */
   }
+  .offerings {
+    height: 150px;
+  }
 }
 
 .bottom-group p {
