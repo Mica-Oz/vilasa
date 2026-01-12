@@ -845,6 +845,12 @@ footer img {
   .offerings {
     height: 150px;
   }
+  #disappear-title {
+    display: none;
+  }
+  #appear-title {
+    display: block !important;
+  }
 }
 
 .bottom-group p {
