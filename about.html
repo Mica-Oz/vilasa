@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta
+      property="og:image"
+      content="https://neileymorris.com/assets/images/About3.jpg"
+    /> -->
+    <meta property="og:title" content="Vilasa" />
+    <meta
+      property="og:description"
+      content="Vilasa is a premier concierge service offering unparalleled luxury experiences. Our commitment to excellence ensures that every client receives personalized attention and access to the finest amenities. We take pride in curating unforgettable experiences tailored to your unique preferences and desires."
+    />
+    <title>Vilasa</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favi1616.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favi3232.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favi180180.png"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
+    "
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17722687269"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17722687269");
+    </script>
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-17722687269/1ParCL-lpdUbEKX-6oJC",
+      });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/logo1.png"
+            alt="logo"
+            width="100%"
+            id="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <script>
+          $(document).ready(function () {
+            $(document).on("click", function (event) {
+              var $navbarCollapse = $("#navbarNav");
+              var $navbarToggler = $(".navbar-toggler");
+              // If menu is open and click is outside menu and toggler
+              if (
+                $navbarCollapse.hasClass("show") &&
+                !$navbarCollapse.is(event.target) &&
+                $navbarCollapse.has(event.target).length === 0 &&
+                !$navbarToggler.is(event.target) &&
+                $navbarToggler.has(event.target).length === 0
+              ) {
+                $navbarCollapse.collapse("hide");
+              }
+            });
+          });
+        </script>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#speakers">Team</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#offerings">Services</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li> -->
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#locations">Locations</a>
+            </li> -->
+          </ul>
+          <a href="#contact" class="btn btn-brand ms-lg-3">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">vee-LAH-sah • विलास</h1>
+              <div class="line" style="background-color: var(--c-brand)"></div>
+              <p>
+                Vilasa is a premier concierge service offering unparalleled
+                luxury experiences. Our commitment to excellence ensures that
+                every client receives personalized attention and access to the
+                finest amenities. We take pride in curating unforgettable
+                experiences tailored to your unique preferences and desires.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div
+            class="col-lg-6"
+            id="abt-img-cont"
+            data-aos="fade-down"
+            data-aos-delay="170"
+          >
+            <!-- <img id="about-img" src="./assets/images/about.jpg" alt="about" />
+            <div id="overlay"></div> -->
+          </div>
+          <div
+            class="col-lg-5 about-dets"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
+            <h1 class="abouth1">Meet Lisa Thompson - Founder</h1>
+
+            <div class="d-flex pt-4 mb-3">
+              <!-- <div class="iconbox me-4 ">
+                <i class="bi bi-diamond"></i>
+              </div> -->
+              <div>
+                <h5 class="abouth5">EXPERIENCE</h5>
+                <p>
+                  With over 20 years of experience in the finance and banking
+                  industry, paired with a strong background in real estate and
+                  event planning, I bring a unique blend of professionalism,
+                  precision, and creativity to the world of luxury concierge
+                  services.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <!-- <div class="iconbox me-4 ">
+                <i class="bi bi-diamond"></i>
+              </div> -->
+              <div>
+                <h5 class="abouth5">PPREPAREDNESS</h5>
+                <p>
+                  As a certified wedding consultant, I’ve planned and executed
+                  countless weddings and hundreds of events, ensuring every
+                  detail is seamless and unforgettable. Beyond events, I’ve
+                  built a reputation for excellence in personal shopping,
+                  lifestyle management, and organization—helping clients
+                  simplify their lives while elevating their experiences.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <!-- <div class="iconbox me-4 ">
+                <i class="bi bi-diamond"></i>
+              </div> -->
+              <div>
+                <h5 class="abouth5">POSSIBILITY</h5>
+                <p>
+                  I like to think of myself as a “Jane of all
+                  trades”—resourceful, detail-oriented, and committed to
+                  delivering personalized solutions for every need. Whether it’s
+                  curating an extraordinary event, managing the details of a
+                  busy lifestyle, or finding that perfect luxury experience, my
+                  passion is making the impossible possible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-cont">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-3 col-sm-6 special-foot">
+              <a href="#">
+                <img
+                  src="./assets/images/logo3.png"
+                  alt=""
+                  style="width: 200px"
+                />
+              </a>
+              <div class="line special"></div>
+              <p>विलासS</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer-box col-lg-3 col-sm-6">
+              <h5 class="mb-0">LEARN MORE</h5>
+              <div class="line"></div>
+              <ul class="footer-box">
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#speakers">Our Team</a>
+                </li>
+                <li>
+                  <a href="#offerings">Our Practice</a>
+                </li>
+                <li>
+                  <a href="./privacy.html">Privacy Policy</a>
+                </li>
+                <!-- <li>
+                  <a href="#reviews">Reviews</a>
+                </li> -->
+                <!-- <li>
+                  <a href="#news">News</a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="footer-box col-lg-3 col-sm-6">
+              <h5 class="mb-0">CONNECT</h5>
+              <div class="line"></div>
+              <ul class="footer-box">
+                <!-- <li>
+                  <a href="./careers.html">Careers</a>
+                </li> -->
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-box col-lg-3 col-sm-6">
+              <h5 class="mb-0">CONTACT</h5>
+              <div class="line"></div>
+              <ul class="footer-box">
+                <li>(310)-999-5156</li>
+                <li>lisa@vilasaluxury.com</li>
+                <li>www.vilasaluxury.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row g-4 justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0">
+                © Copyright Vilasa Luxury Concierge. All Rights Reserved.
+              </p>
+            </div>
+            <div class="col-auto">
+              <p class="mb-0">
+                Web Design by
+                <a href="https://micaoz-3e29397c429a.herokuapp.com/">Mica Oz</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
