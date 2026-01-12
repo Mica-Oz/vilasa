@@ -834,6 +834,12 @@ footer img {
     /* font-family: "Perpetua", serif; */
   }
 }
+@media (max-width: 700px) {
+  .prac {
+    width: 90vw;
+    /* display: block; */
+  }
+}
 
 .bottom-group p {
   font-size: 15px !important;
@@ -854,34 +860,7 @@ footer img {
   margin-bottom: 0;
   height: 570px;
 }
-#sarah .attorneyText {
-  display: flex;
-  flex-direction: column;
-  height: 570px;
-  /* align-items: flex-end; */
-}
-#mackenzie .attorneyText {
-  display: flex;
-  flex-direction: column;
-  /* align-items: flex-start; */
-  height: 570px;
-  overflow-y: scroll;
-}
-#zoe .attorneyText {
-  display: flex;
-  flex-direction: column;
-  /* align-items: flex-start; */
-  height: 559px;
-  overflow-y: scroll;
-}
-#maryann .attorneyText {
-  height: 559px;
-}
 
-#mackenzie .bio {
-  width: 98.5%;
-  transform: translateX(-9px);
-}
 .speaker-content {
   background-color: var(--c-brand);
   color: var(--c-light3);
@@ -909,12 +888,4 @@ footer img {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c3976b' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-/* privacy */
-#privacy {
-  background-color: var(--c-light3);
-  padding: 50px;
-}
-#privacy p {
-  font-size: 18px;
 }
