@@ -343,32 +343,79 @@ h2 {
   height: 250px;
   margin-bottom: 20px;
 }
-.offerings.family {
+.offerings.one {
   background: linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
-    url(../images/scales.jpeg);
-  background-position: center;
-  background-size: cover;
+    url(../images/silk.jpeg);
+  background-position: right;
+  background-size: 200%;
 }
-.offerings.criminal {
+.offerings.two {
   background: linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
-    url(../images/lady-justice2.jpg);
-  background-position: center;
-  background-size: cover;
+    url(../images/silk.jpeg);
+
+  background-position: top;
+
+  background-size: 200%;
 }
-.offerings.appeals {
+.offerings.three {
   background: linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
-    url(../images/appeals.jpeg);
+    url(../images/silk.jpeg);
+  background-position: bottom;
+  background-size: 200%;
+}
+.offerings.four {
+  background: linear-gradient(
+      rgba(var(--c-dark3-rgb), 0.997),
+      rgba(var(--c-dark3-rgb), 0.638)
+    ),
+    url(../images/silk.jpeg);
   background-position: center;
-  background-size: cover;
+  background-size: 200%;
+}
+.offerings.five {
+  background: linear-gradient(
+      rgba(var(--c-dark3-rgb), 0.997),
+      rgba(var(--c-dark3-rgb), 0.638)
+    ),
+    url(../images/silk.jpeg);
+  background-position: right;
+  background-size: 200%;
+}
+.offerings.six {
+  background: linear-gradient(
+      rgba(var(--c-dark3-rgb), 0.997),
+      rgba(var(--c-dark3-rgb), 0.638)
+    ),
+    url(../images/silk.jpeg);
+  background-position: left;
+  background-size: 200%;
+}
+.offerings.seven {
+  background: linear-gradient(
+      rgba(var(--c-dark3-rgb), 0.997),
+      rgba(var(--c-dark3-rgb), 0.638)
+    ),
+    url(../images/silk.jpeg);
+  background-position: bottom;
+  background-size: 200%;
+}
+.offerings.eight {
+  background: linear-gradient(
+      rgba(var(--c-dark3-rgb), 0.997),
+      rgba(var(--c-dark3-rgb), 0.638)
+    ),
+    url(../images/silk.jpeg);
+  background-position: top;
+  background-size: 200%;
 }
 
 .offerings::after {
