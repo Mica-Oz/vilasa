@@ -299,6 +299,9 @@ h2 {
 #offerings {
   background-color: var(--c-light2);
 }
+.offerings {
+  border-radius: 10px;
+}
 .box-row {
   display: flex;
   justify-content: center;
