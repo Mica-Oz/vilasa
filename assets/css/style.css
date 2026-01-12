@@ -247,6 +247,7 @@ h2 {
   width: 550px;
   height: 550px;
   border: 15px solid var(--c-dark3);
+  border-radius: 10px;
 }
 .hr-top {
   margin: 60px auto auto auto;
