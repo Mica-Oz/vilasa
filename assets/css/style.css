@@ -164,24 +164,77 @@ img {
 /* HERO */
 
 #hero {
-  background: linear-gradient(
-      rgba(var(--c-dark4-rgb), 0.907),
-      rgba(var(--c-dark4-rgb), 0.238)
-    ),
-    url(../images/vid1.mp4);
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
-#background-video {
+
+.hero-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   z-index: -1;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition:
+    opacity 1s ease-in-out,
+    transform 1s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  animation: slideIn 1s ease-in-out;
+}
+
+.hero-slide.exit {
+  animation: slideOut 1s ease-in-out;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(var(--c-dark4-rgb), 0.907),
+    rgba(var(--c-dark4-rgb), 0.238)
+  );
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 #hero h1 {
   color: #e5d9ba;
@@ -347,7 +400,8 @@ h2 {
   margin-bottom: 20px;
 }
 .offerings.one {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -356,7 +410,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.two {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -367,7 +422,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.three {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -376,7 +432,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.four {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -385,7 +442,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.five {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -394,7 +452,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.six {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -403,7 +462,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.seven {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -412,7 +472,8 @@ h2 {
   background-size: 200%;
 }
 .offerings.eight {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-dark3-rgb), 0.997),
       rgba(var(--c-dark3-rgb), 0.638)
     ),
@@ -474,7 +535,8 @@ h2 {
 /* COUNTER */
 #counter {
   color: white;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-brand-rgb), 0.807),
       rgba(var(--c-brand-rgb), 0.838)
     ),
@@ -635,11 +697,12 @@ h2 {
   content: "";
   width: 100%;
   height: 70%;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       rgba(var(--c-brand-rgb), 0.807),
       rgba(var(--c-brand-rgb), 0.838)
     ),
-    url(../images/conatctbg.jpeg);
+    url(../images/contactbg.jpeg);
   background-position: center;
   background-size: cover;
   position: absolute;
