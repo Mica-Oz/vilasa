@@ -109,7 +109,7 @@ img {
   background-color: var(--c-brand);
   opacity: 0.85;
   /* height: 140px; */
-  padding: 30px;
+  padding: 20px;
 }
 
 .navbar-nav .nav-link {
@@ -127,7 +127,7 @@ img {
   color: var(--c-dark2);
 }
 #logo {
-  width: 13vw;
+  width: 15vw;
 }
 
 /* BTN */
