@@ -109,7 +109,7 @@ img {
   background-color: var(--c-brand);
   opacity: 0.85;
   /* height: 140px; */
-  padding: 20px;
+  padding: 2px;
 }
 
 .navbar-nav .nav-link {
@@ -248,7 +248,7 @@ h2 {
   font-size: 40px;
 }
 #hero-img {
-  transform: translateX(-8vw);
+  transform: translate(-8vw, -3vw);
   max-width: 70vw;
 }
 
