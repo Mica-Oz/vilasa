@@ -249,6 +249,7 @@ h2 {
 }
 #hero-img {
   transform: translateX(-8vw);
+  max-width: 70vw;
 }
 
 @media (max-width: 1432px) {
